@@ -186,7 +186,11 @@
   .address-line{overflow-wrap:anywhere}
   @media(max-width:760px){.hero{min-height:540px;background-position:58% center}.hero-grid{min-height:540px}.cut-photo{width:100%;height:180px}.cut-cell{min-width:0;display:block}.cut-cell .cut-photo{width:100%;height:180px;margin-bottom:12px}#page-inventory table,#page-inventory tbody,#page-inventory tr,#page-inventory td{display:block;width:100%}#page-inventory tbody tr{padding:14px;border-bottom:1px solid var(--line)}#page-inventory tbody td{border:0;padding:8px 4px}#page-inventory tbody td:first-child{padding-top:4px}#page-inventory tbody td:before{content:attr(data-label);display:block;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:4px}#page-inventory .cut-cell:before{display:none}}
 
-  body { min-width: 320px; overflow-x: hidden; }
+/* ================= RESPONSIVE OVERRIDES =================
+   Keep the existing design while improving layout on phones,
+   tablets, laptops, wide monitors and touch devices. */
+html { -webkit-text-size-adjust: 100%; }
+body { min-width: 320px; overflow-x: hidden; }
 .wrap { width: 100%; }
 button, input, textarea, select { max-width: 100%; }
 button, a { -webkit-tap-highlight-color: transparent; }
